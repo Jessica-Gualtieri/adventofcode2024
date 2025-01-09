@@ -1,4 +1,5 @@
-﻿string fileName = "input.txt";
+﻿/* Part One
+string fileName = "input.txt";
 string currentDirectory = AppContext.BaseDirectory;
 string filePath = Path.Combine(currentDirectory, fileName);
 StreamReader streamReader = new StreamReader(filePath);
@@ -6,6 +7,7 @@ string? line;
 int total = 0;
 List<int> leftColumn = new List<int>();
 List<int> rightColumn = new List<int>();
+
 
 while (!streamReader.EndOfStream)
 {
@@ -42,4 +44,40 @@ int GetSmallestNumber(List<int> list)
     int smallestNumber = 0;
     smallestNumber = list.Min();
     return smallestNumber;
+}
+*/
+
+// Part Two
+string fileName = "input.txt";
+string currentDirectory = AppContext.BaseDirectory;
+string filePath = Path.Combine(currentDirectory, fileName);
+StreamReader streamReader = new StreamReader(filePath);
+string? line;
+int total = 0;
+List<int> leftColumn = new List<int>();
+List<int> rightColumn = new List<int>();
+
+
+while (!streamReader.EndOfStream)
+{
+    line = streamReader.ReadLine();
+    int separatorIndex = line.IndexOf(' ');
+    string leftNumberAsString = line.Substring(0, separatorIndex);
+    string rightNumberAsString = line.Substring(separatorIndex+1);
+    ConvertToIntAndAddToList(leftNumberAsString, leftColumn);
+    ConvertToIntAndAddToList(rightNumberAsString, rightColumn);
+}
+
+foreach (int number in leftColumn)
+{
+    List<int> list = rightColumn.FindAll(x => x == number);
+    total += list.Count > 0 ? list.Count * number : 0;
+}
+
+Console.WriteLine(total);
+
+void ConvertToIntAndAddToList(string numberAsString, List<int> list)
+{
+    int number = int.Parse(numberAsString);
+    list.Add(number);
 }
