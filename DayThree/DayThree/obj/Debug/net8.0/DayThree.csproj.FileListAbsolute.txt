@@ -1,0 +1,16 @@
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\DayThree.exe
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\input.txt
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\DayThree.deps.json
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\DayThree.runtimeconfig.json
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\DayThree.dll
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\bin\Debug\net8.0\DayThree.pdb
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.AssemblyInfoInputs.cache
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.AssemblyInfo.cs
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.csproj.CoreCompileInputs.cache
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.sourcelink.json
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.dll
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\refint\DayThree.dll
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.pdb
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\DayThree.genruntimeconfig.cache
+C:\Users\Jessica\Desktop\development\adventofcode2024\DayThree\DayThree\obj\Debug\net8.0\ref\DayThree.dll
