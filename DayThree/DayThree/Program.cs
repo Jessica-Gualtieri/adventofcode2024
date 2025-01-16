@@ -15,7 +15,24 @@ while (!streamReader.EndOfStream)
     MatchCollection matchCollection = Regex.Matches(line, pattern);
     foreach (Match match in matchCollection)
     {
-        Console.WriteLine(match.Value);
+        string separator = ",";
+        int indexOfSeparator = match.Value.IndexOf(separator);
+        if (indexOfSeparator > 0 && match.Value.Length > 6)
+        {
+            string firstValueAsString = match.Value.Substring(4, indexOfSeparator - 4);
+            int firstValue = 0;
+            if (int.TryParse(firstValueAsString, out _))
+            {
+                firstValue = int.Parse(firstValueAsString);
+            }
+            string secondValueAsString = match.Value.Substring(indexOfSeparator + 1, match.Value.Length - firstValueAsString.Length - 6);
+            int secondValue = 0;
+            if (int.TryParse(secondValueAsString, out _))
+            {
+                secondValue = int.Parse(secondValueAsString);
+            }
+            total += firstValue * secondValue;
+        }
     }
 }
 
